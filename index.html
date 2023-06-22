@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Umut Kaan Özdemir - Portfolio</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/5d35c7424c.js" crossorigin="anonymous"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <!-- WebGL -->
+   <canvas id="canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></canvas>
+
+   <script src="./twgl-full.min.js"></script>
+   <script src="background.js"></script>
+   <!-- WebGL -->
+   <div id="header">
+      <div class="container">
+         <nav>
+            <!-- This logo is Kevin logo -->
+            <img src="images/logo.png" class="logo">
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Portfolio</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>
+         </nav>
+         <div class="header-text">
+            <p>Game Developer</p>
+            <h1>Hi, I'm <span>Umut Kaan</span><br>Özdemir from Türkiye.</h1>
+         </div>
+      </div>
+   </div>
+   <!-- ----------about----------- -->
+   <div id="about">
+      <div class="container">
+         <div class="row">
+            <div class="about-col-1">
+               <img src="images/mee.png" style="width: 313px; height: 500px; object-fit: contain; border-radius: 15px;">
+            </div>
+            <div class="about-col-2">
+               <h1 class="sub-title">About Me</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque fugit quam excepturi incidunt unde
+                  assumenda placeat odit laudantium. Laboriosam nulla ipsa deleniti cumque! Accusamus sapiente fugiat
+                  tenetur, voluptatum reiciendis aperiam!</p>
+
+               <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                  <p class="tab-links" onclick="opentab('education')">Education</p>
+
+               </div>
+               <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                     <li><span>Another</span><br>I</li>
+                     <li><span>Topic</span><br>Don't know what to</li>
+                     <li><span>Here</span><br>write here yet</li>
+
+                  </ul>
+               </div>
+               <div class="tab-contents" id="experience">
+                  <ul>
+                     <li><span>Hi</span><br>Books</li>
+                     <li><span>and</span><br>are</li>
+                     <li><span>welcome</span><br>close friends</li>
+
+                  </ul>
+               </div>
+               <div class="tab-contents" id="education">
+                  <ul>
+                     <li><span>GameDevelopment</span><br>Producing Softwarea</li>
+                     <li><span>Modeling</span><br>Blender</li>
+                     <li><span>Designing</span><br>Inkscape</li>
+
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- ----------services----------- -->
+   <div id="services">
+      <div class="container">
+         <h1 class="sub-title">My Services</h1>
+         <div class="services-list">
+            <div>
+               <i class="fa-solid fa-code"></i>
+               <h2>Web Design</h2>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum fugiat modi consequatur nesciunt
+                  blanditiis iure similique? Repellat exercitationem ullam sit?</p>
+               <a href="#">learn more</a>
+            </div>
+            <div>
+               <i class="fa-solid fa-crop"></i>
+               <h2>UI/UX Design</h2>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum fugiat modi consequatur nesciunt
+                  blanditiis iure similique? Repellat exercitationem ullam sit?</p>
+               <a href="#">learn more</a>
+            </div>
+            <div>
+               <i class="fa-light fa-browser"></i>
+               <h2>App Design</h2>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum fugiat modi consequatur nesciunt
+                  blanditiis iure similique? Repellat exercitationem ullam sit?</p>
+               <a href="#">learn more</a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- ----------portfolio----------- -->
+   <div id="portfolio">
+      <div class="container">
+         <h1 class="sub-title">My Work</h1>
+         <div class="work-list">
+            <div class="work">
+               <img src="images/work-1.png">
+               <div class="layer">
+                  <h3>Social Media App</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A debitis non omnis nobis hic. Aperiam
+                     ipsum et voluptatem, possimus porro placeat, maiores, quia alias iure laborum dolores illo
+                     veritatis incidunt!</p>
+                  <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+               </div>
+            </div>
+            <div class="work">
+               <img src="images/work-2.png">
+               <div class="layer">
+                  <h3>Music App</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A debitis non omnis nobis hic. Aperiam
+                     ipsum et voluptatem, possimus porro placeat, maiores, quia alias iure laborum dolores illo
+                     veritatis incidunt!</p>
+                  <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+               </div>
+            </div>
+            <div class="work">
+               <img src="images/work-3.png">
+               <div class="layer">
+                  <h3>Online Shopping App</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A debitis non omnis nobis hic. Aperiam
+                     ipsum et voluptatem, possimus porro placeat, maiores, quia alias iure laborum dolores illo
+                     veritatis incidunt!</p>
+                  <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+               </div>
+            </div>
+         </div>
+         <a href="#" class="btn">See more</a>
+      </div>
+   </div>
+   <!-- ----------contact----------- -->
+   <div id="contact">
+      <div class="container">
+         <div class="row">
+            <div class="contact-left">
+               <h1 class="sub-title">Contact Me</h1>
+               <p><i class="fa-regular fa-paper-plane"></i>contact@example.com</p>
+               <p><i class="fa-solid fa-square-phone"></i> +123 456 789</p>
+               <div class="social-icons">
+                  <a href="https://github.com/UmutKaan50"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://twitter.com/umutkaan50"><i class="fa-brands fa-twitter-square"></i></a>
+                  <a href=""><i class="fa-brands fa-linkedin"></i></a>
+               </div>
+               <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+               <form action="">
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="email" placeholder="Your Email" required>
+                  <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+               </form>
+            </div>
+         </div>
+      </div>
+      <div class="copyright">
+         <p>Copyright © Umut Kaan.</p>
+      </div>
+   </div>
+
+   <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+         for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+         }
+         for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+      }
+
+   </script>
+
+
+
+</body>
+
+</html>
