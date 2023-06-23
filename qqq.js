@@ -55,7 +55,7 @@
     const uniforms = {
         u_matrix: m4.identity(),
         // u_color is the color value we use to draw cubes. In this case cubes will be red.
-        u_color: [1, 0, 0.31, 1],
+        u_color: [1, 0, 0, 1],
     };
 
     const camera = m4.identity();
