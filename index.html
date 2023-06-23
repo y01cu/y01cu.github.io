@@ -26,7 +26,7 @@
             <ul id="sidemenu">
                <li><a href="#header">Home</a></li>
                <li><a href="#about">About</a></li>
-               <li><a href="#services">Services</a></li>
+               <li><a href="#interests">Interests</a></li>
                <li><a href="#portfolio">Portfolio</a></li>
                <li><a href="#contact">Contact</a></li>
                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
@@ -86,29 +86,31 @@
    </div>
 
    <!-- ----------services----------- -->
-   <div id="services">
+   <div id="interests">
       <div class="container">
-         <h1 class="sub-title">My Services</h1>
-         <div class="services-list">
+         <h1 class="sub-title">My interests</h1>
+         <div class="interests-list">
             <div>
-               <i class="fa-solid fa-code"></i>
-               <h2>Web Design</h2>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum fugiat modi consequatur nesciunt
-                  blanditiis iure similique? Repellat exercitationem ullam sit?</p>
+               <i class="fa-brands fa-unity"></i>
+               <h2>Game Development</h2>
+               <p>My journey into game development began in late 2019, initiated through my university studies. Since
+                  late 2021, my explorations in this domain have intensified, and I have dedicated myself to gaining a
+                  thorough understanding of Unity Engine. As I strive to enhance both my software development and game
+                  development skills, I am captivated by the creative and technical challenges that this field offers.
+               </p>
                <a href="#">learn more</a>
             </div>
             <div>
-               <i class="fa-solid fa-crop"></i>
-               <h2>UI/UX Design</h2>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum fugiat modi consequatur nesciunt
-                  blanditiis iure similique? Repellat exercitationem ullam sit?</p>
+               <i class="fa-regular fa-cube"></i>
+               <h2>Modeling</h2>
+               <p>I have just started learning 3d modeling with Blender. Trying to get the most from this software.</p>
                <a href="#">learn more</a>
             </div>
             <div>
                <i class="fa-light fa-browser"></i>
-               <h2>App Design</h2>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum fugiat modi consequatur nesciunt
-                  blanditiis iure similique? Repellat exercitationem ullam sit?</p>
+               <h2>Computer Graphics</h2>
+               <p>Starting with Computer Graphics course in university which I just finished this field is one of my
+                  interests.</p>
                <a href="#">learn more</a>
             </div>
          </div>
@@ -160,8 +162,7 @@
          <div class="row">
             <div class="contact-left">
                <h1 class="sub-title">Contact Me</h1>
-               <p><i class="fa-regular fa-paper-plane"></i>contact@example.com</p>
-               <p><i class="fa-solid fa-square-phone"></i> +123 456 789</p>
+               <p><i class="fa-regular fa-paper-plane"></i>umutaan50@gmail.com</p>
                <div class="social-icons">
                   <a href="https://github.com/UmutKaan50"><i class="fa-brands fa-github"></i></a>
                   <a href="https://twitter.com/umutkaan50"><i class="fa-brands fa-twitter-square"></i></a>
@@ -170,11 +171,17 @@
                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-               <form name="submit-to-google-sheet">
-                  <input type="text" name="Name" placeholder="Your Name" required>
-                  <input type="email" name="Email" placeholder="Your Email" required>
-                  <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+               <!-- <form action="">
+                  <input type="text" name="name" placeholder="Your Full Name" required>
+                  <input type="email" name="email" placeholder="Your Email" required>
+                  <textarea name="message" placeholder="Your Message" rows="6"></textarea>
                   <button type="submit" class="btn btn2">Submit</button>
+               </form> -->
+               <form action="https://formsubmit.co/umutaan50@gmail.com" method="POST">
+                  <input type="text" name="name" placeholder="Full name" required>
+                  <input type="email" name="email" placeholder="Email adress" required>
+                  <textarea type="message" name="message" placeholder="Message" rows="8"></textarea>
+                  <button type="submit" class="btn btn2">Send</button>
                </form>
             </div>
          </div>
@@ -216,7 +223,7 @@
    </script>
 
 
-   <script>
+   <!-- <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbwedq6jBH1EeLpgi2BVBDRpygGiXadvegIG98vIDb-e0fpBLzbfisiSbwu0g6-VgrM-/exec'
       const form = document.forms['submit-to-google-sheet']
 
@@ -226,7 +233,7 @@
             .then(response => console.log('Success!', response))
             .catch(error => console.error('Error!', error.message))
       })
-   </script>
+   </script> -->
 
 </body>
 
