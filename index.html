@@ -16,21 +16,28 @@
    <canvas id="canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></canvas>
    <script src="ttt.js"></script>
    <script src="qqq.js"></script>
-   <div id="header">
+   <div class="sticky-nav">
       <div class="container">
          <nav>
-            <!-- This logo is Kevin logo -->
-            <img src="images/logo.png" style="padding-top: 20px;" class="logo">
+            <img src="images/logo.png" class="logo">
             <ul id="sidemenu">
                <li><a href="#header">Home</a></li>
                <li><a href="#about">About</a></li>
                <li><a href="#interests">Interests</a></li>
                <li><a href="#portfolio">Portfolio</a></li>
                <li><a href="#contact">Contact</a></li>
-               <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+               <div class="xmark-container">
+                  <!-- Also I've solved this centering problem using in-line css again. -->
+                  <i class="fa-solid fa-xmark" style="padding-left: 40px; padding-right: 40px;"
+                     onclick="closemenu()"></i>
+               </div>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
          </nav>
+      </div>
+   </div>
+   <div id="header">
+      <div class="container">
          <div class="header-text">
             <p>Computer Scientist, Game Developer</p>
             <h1>Hi, I'm <span>Umut Kaan</span><br>Özdemir from Türkiye.</h1>
@@ -43,7 +50,7 @@
          <div class="row">
             <div class="about-col-1">
                <img src="images/my_image.png"
-                  style="width: 313px; height: 500px; object-fit: contain; border-radius: 15px;">
+                  style="width: 313px; height: 500px; object-fit: contain; border-radius: 15px; margin-top: 100px;">
             </div>
             <div class="about-col-2">
                <h1 class="sub-title">About Me</h1>
@@ -75,7 +82,7 @@
                <div class="tab-contents active-tab" id="skills">
                   <ul>
                      <li><span>Programming languages experience from the highest to the lowest</span><br>C#, Java, C,
-                        JavaScript, Python</li>
+                        JavaScript, Python, GLSL, Haskell, Verilog</li>
                      <li><span>Main tools and techologies</span><br>Unity, WebGL, Blender, Three.js
                      </li>
                   </ul>
@@ -133,7 +140,8 @@
    <!-- ----------portfolio----------- -->
    <div id="portfolio">
       <div class="container">
-         <h1 class="sub-title">My Work</h1>
+         <!-- Overrided margin value here below for the sake of consistency :) -->
+         <h1 class="sub-title" style="margin-top: 4%">My Work</h1>
          <div class="work-list">
             <div class="work">
                <img src="images/work-1.png">
@@ -204,7 +212,8 @@
                   <textarea name="message" placeholder="Your Message" rows="6"></textarea>
                   <button type="submit" class="btn btn2">Submit</button>
                </form> -->
-               <form action="https://formsubmit.co/umutaan50@gmail.com" method="POST">
+               <form action="https://formsubmit.co/umutaan50@gmail.com" method="POST" style="  margin-top: 50px;
+               ">
                   <input type="text" name="name" placeholder="Full name" required>
                   <input type="email" name="email" placeholder="Email adress" required>
                   <textarea type="message" name="message" placeholder="Message" rows="8"></textarea>

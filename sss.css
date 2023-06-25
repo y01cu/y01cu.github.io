@@ -12,18 +12,31 @@ body {
   color: #fff;
 }
 #header {
-  /* width: 50%;
-  height: 1000vh;
-  background-image: url(images/background.png);
-  background-size: cover;
-  background-position: center; */
+  /* width: 50%; */
+  /* height: 1000vh; */
+  /* background-image: url(images/background.png); */
+  /* background-size: cover; */
+  /* background-position: center; */
 }
 .sidemenu {
   position: fixed;
 }
 .container {
-  padding: 10px 10%;
+  padding: 5px 5%;
 }
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #262626;
+}
+
+/* .container nav {
+  position: sticky;
+  top: 0;
+  padding: 50px;
+} */
+
 nav {
   display: flex;
   align-items: center;
@@ -36,7 +49,7 @@ nav {
 nav ul li {
   display: inline-block;
   list-style: none;
-  margin: 10px 20px;
+  margin: 0px 20px;
 }
 nav ul li a {
   text-decoration: none;
@@ -58,7 +71,9 @@ nav ul li a:hover::after {
   width: 100%;
 }
 .header-text {
-  margin-top: 5%;
+  /* padding-top: 40px; */
+  margin-top: 8%;
+  /* margin-top: 40px; */
   font-size: 30px;
 }
 .header-text h1 {
@@ -89,6 +104,8 @@ nav ul li a:hover::after {
   flex-basis: 60%;
 }
 .sub-title {
+  /* padding-top: 40px; */
+  margin-top: 5%;
   font-size: 60px;
   font-weight: 600;
   color: #fff;
@@ -252,6 +269,7 @@ nav ul li a:hover::after {
 /* ----------contact----------- */
 .contact-left {
   flex-basis: 35%;
+  margin-top: 2%;
 }
 .contact-right {
   flex-basis: 60%;
@@ -312,7 +330,7 @@ form .btn2 {
   /* background: #262626; */
   font-weight: 300;
   /* margin-top: 20px; */
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 .copyright i {
   color: #ff0000;
@@ -322,7 +340,8 @@ nav .fa-solid {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 770px) {
+  /* I've changed max width from 600px to 770px since it's more suitable for mobile devices. */
   /*Background image part will be skipped since it's not necessary. */
 
   .header-text {
@@ -341,16 +360,29 @@ nav .fa-solid {
     position: fixed;
     top: 0;
     right: -200px;
-    width: 200px;
+    width: 150px;
     height: 100vh;
     padding-top: 50px;
     z-index: 2;
     transition: right 0.3s;
+    text-align: center;
+
+    align-items: center;
+    justify-content: center;
   }
   nav ul li {
     display: block;
-    margin: 25px;
+    /* margin: 25px; */
+    padding: 20px;
   }
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+  /* .xmark-container {
+    padding: 50px;
+  } */
   nav ul .fa-solid {
     position: absolute;
     top: 25px;
@@ -358,6 +390,7 @@ nav .fa-solid {
     cursor: pointer;
   }
   .sub-title {
+    margin-top: 15%;
     font-size: 40px;
   }
   .about-col-1,
