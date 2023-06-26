@@ -8,8 +8,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: #080808;
-  color: #000000;
+  /* background: #080808;
+  color: #000000; */
 }
 #header {
 }
@@ -170,17 +170,17 @@ nav ul li a:hover::after {
   color: #000000;
   margin-bottom: 15px;
 }
-.interests-list div a {
+/* .interests-list div a {
   text-decoration: none;
   color: #000000;
   font-size: 12px;
   margin-top: 20px;
   display: inline-block;
-}
-.interests-list div:hover {
+} */
+/* .interests-list div:hover {
   background: #32cd32;
   transform: translateY(-10px);
-}
+} */
 /* ----------portfolio----------- */
 #portfolio {
   /* padding: 50px 0; */
@@ -356,6 +356,8 @@ nav .fa-solid {
   }
   nav ul {
     background: #ff4500;
+    background: #d3d3d3;
+    background: linear-gradient(45deg, #ff4500, #1e90ff);
     position: fixed;
     top: 0;
     right: -200px;
@@ -377,7 +379,7 @@ nav .fa-solid {
   nav ul li a {
     text-decoration: none;
     /* color: #fff; */
-    color: #000000;
+    color: #fff;
     font-size: 18px;
   }
   /* .xmark-container {
