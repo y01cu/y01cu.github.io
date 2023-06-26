@@ -62,12 +62,10 @@ nav ul li a:hover::after {
   width: 100%;
 }
 .header-text {
-  margin-top: 8%;
   font-size: 30px;
 }
 .header-text h1 {
   font-size: 60px;
-  margin-top: 20px;
 }
 .header-text p span {
   color: #ff4500;
