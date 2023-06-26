@@ -55,7 +55,7 @@
     const uniforms = {
         u_matrix: m4.identity(),
         // u_color is the color value we use to draw cubes. In this case cubes will be red.
-        u_color: [1, 0, 0, 1],
+        u_color: [0, 0, 0, 1],
     };
 
     const camera = m4.identity();
@@ -66,7 +66,11 @@
     const eye = [0, 0, -6];
     const target = [0, 0, 0];
     const up = [0.2, 0.8, 0];
-    const clearColor = [0.01, 0.01, 0.01, 1];
+    
+    const clearColor = [0.98, 0.98, 0.98, 1]; 
+
+    
+    
     // const clearColor = [0.055, 0.059, 0.412, 1];
 
     let requestId;
@@ -163,7 +167,8 @@
             m4.scale(world, [s, s, s], world);
             m4.multiply(viewProjection, world, uniforms.u_matrix);
 
-            uniforms.u_color[3] = ii / num * fade;
+            // uniforms.u_color[3] = ii / num * fade;
+            uniforms.u_color[3] = 1;
 
             twgl.setUniforms(programInfo, uniforms);
 
@@ -175,5 +180,4 @@
         }
     }
     requestAnimation(render);
-
 }());
