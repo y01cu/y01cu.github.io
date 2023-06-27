@@ -28,8 +28,17 @@
       gl_FragColor = u_color;
   }
   `;
+  const fsCubes = `precision mediump float;
 
+  uniform vec4 u_color;
+
+  void main(void)
+  {
+      gl_FragColor = u_color;
+  }
+  `;
     const programInfo = twgl.createProgramInfo(gl, [vs, fs]);
+    const programInfoCubes = twgl.createProgramInfo(gl, [vs, fsCubes]);
     const arrays = {
         position: [
             -1, -1, -1,
@@ -55,7 +64,7 @@
     const uniforms = {
         u_matrix: m4.identity(),
         // u_color is the color value we use to draw cubes. In this case cubes will be red.
-        u_color: [0, 0, 0, 1],
+        u_color: [1, 0, 0, 1],
     };
 
     const camera = m4.identity();
@@ -66,11 +75,12 @@
     const eye = [0, 0, -6];
     const target = [0, 0, 0];
     const up = [0.2, 0.8, 0];
-    
-    const clearColor = [0.98, 0.98, 0.98, 1]; 
 
-    
-    
+    // const clearColor = [0.18, 0.18, 0.18, 0];
+    const clearColor = [0.98, 0.98, 0.98, 0];
+
+
+
     // const clearColor = [0.055, 0.059, 0.412, 1];
 
     let requestId;
@@ -127,6 +137,8 @@
 
         gl.clearColor(clearColor[0], clearColor[1], clearColor[2], clearColor[3]);
         gl.clear(gl.COLOR_BUFFER_BIT);
+        gl.enable(gl.DEPTH_TEST)
+        gl.clear(gl.DEPTH_BUFFER_BIT);
         gl.enable(gl.BLEND);
         gl.blendFunc(gl.SRC_ALPHA, gl.ONE);
         gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
@@ -147,12 +159,15 @@
         m4.lookAt(eye, target, up, camera);
         m4.inverse(camera, view);
         m4.multiply(projection, view, viewProjection);
-
+        
         gl.useProgram(programInfo.program);
         twgl.setBuffersAndAttributes(gl, programInfo, bufferInfo);
+        
+        // gl.useProgram(programInfoCubes.program);
+        // twgl.setBuffersAndAttributes(gl, programInfoCubes, bufferInfo);
 
         const num = 120;
-        for (let ii = 0; ii < num; ii+=4) {
+        for (let ii = 0; ii < num; ii += 4) {
             const t = time + Math.sin(ii / num) * 0.05;
             const s = 0.15;
             const x = ii % 10 - 5;
@@ -167,10 +182,12 @@
             m4.scale(world, [s, s, s], world);
             m4.multiply(viewProjection, world, uniforms.u_matrix);
 
-            // uniforms.u_color[3] = ii / num * fade;
-            uniforms.u_color[3] = 1;
+            uniforms.u_color[3] = ii / num * fade;
+            // uniforms.u_color[3] = 1;
+            // uniforms.u_color[3] = 0;
 
             twgl.setUniforms(programInfo, uniforms);
+            // twgl.setUniforms(programInfoCubes, uniforms);
 
             twgl.drawBufferInfo(gl, bufferInfo, gl.LINES);
         }
