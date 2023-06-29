@@ -72,7 +72,8 @@ nav ul li a:hover::after {
 }
 /* ----------about----------- */
 #about {
-  color: #ababab;
+  color: #000000;
+  /* color: #ababab; */
 }
 .row {
   display: flex;
@@ -149,7 +150,8 @@ nav ul li a:hover::after {
 }
 
 .interests-list div {
-  background: #d3d3d3;
+  background: #fff;
+  /* background: #d3d3d3; */
   padding: 40px;
   font-size: 13px;
   font-weight: 300;
@@ -244,12 +246,14 @@ nav ul li a:hover::after {
 }
 .btn {
   display: block;
-  margin: 50px auto;
+  margin: 40px auto;
   width: fit-content;
   border: 1px solid #32cd32;
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
+  background-color: #fff;
+  /* background-color: #d3d3d3; */
   color: #32cd32;
   transition: background 0.3s;
 }
@@ -260,17 +264,18 @@ nav ul li a:hover::after {
 /* ----------contact----------- */
 .contact-left {
   flex-basis: 35%;
-  margin-top: 2%;
+  /* margin-top: 2%; */
 }
 .contact-right {
   flex-basis: 60%;
   margin-bottom: 100px;
 }
 .contact-left p {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .contact-left p i {
   color: #ff4500;
+
   margin-right: 15px;
   font-size: 25px;
 }
@@ -281,7 +286,8 @@ nav ul li a:hover::after {
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
-  color: #ababab;
+  color: #000000;
+  /* color: #ababab; */
   display: inline-block;
   transition: transform 0.5s;
 }
@@ -292,7 +298,7 @@ nav ul li a:hover::after {
 .btn.btn2 {
   display: inline-block;
   background: #fafafa;
-  margin-top: 7%;
+  /* margin-top: 7%; */
   color: #32cd32;
 }
 .btn.btn2:hover {
@@ -307,22 +313,24 @@ form textarea {
   width: 100%;
   border: 0;
   outline: none;
-  background: #d3d3d3;
-  padding: 15px;
+  /* background: #d3d3d3; */
+  background: #fff;
+  padding: 12px;
   margin: 15px 0;
-  color: #fff;
+  color: #000000;
   font-size: 18px;
   border-radius: 6px;
 }
 form .btn2 {
-  padding: 14px 60px;
+  /* padding: 14px 60px; */
   font-size: 18px;
-  margin-top: 20px;
   cursor: pointer;
 }
+
 .copyright {
   width: 100%;
   text-align: center;
+  /* flex-basis: 35%; */
   padding: 10px 0;
   /* background: #262626; */
   font-weight: 300;
@@ -354,7 +362,8 @@ nav .fa-solid {
   }
   nav ul {
     background: #ff4500;
-    background: #d3d3d3;
+    /* background: #d3d3d3; */
+    background: #fff;
     background: linear-gradient(45deg, #ff4500, #1e90ff);
     position: fixed;
     top: 0;
@@ -404,6 +413,9 @@ nav .fa-solid {
     /* margin-bottom: 60px; */
     /* margin-top: 100px; */
     font-size: 14px;
+  }
+  .about-col-2 p {
+    color: #000000;
   }
   .tab-links {
     font-size: 16px;
