@@ -61,7 +61,7 @@ var programBackground;
     const uniforms = {
         u_matrix: m4.identity(),
         // u_color is the color value we use to draw cubes. In this case cubes will be red.
-        u_color: [0.2, 0.8, 0.2, 1],
+        u_color: [0.12, 0.56, 1.00, 1],
     };
 
     var backgroundVertices = new Float32Array([
@@ -218,7 +218,7 @@ var programBackground;
         gl.bindBuffer(gl.ARRAY_BUFFER, backgroundBuffer);
         gl.vertexAttribPointer(vertexPosition, 2, gl.FLOAT, false, 0, 0);
         var backgroundColor = gl.getUniformLocation(programBackground, "u_color");
-        gl.uniform4fv(backgroundColor, [0.98, 0.98, 0.98, 0.7]);
+        gl.uniform4fv(backgroundColor, [0.98, 0.98, 0.98, 0.85]);
         gl.drawArrays(gl.TRIANGLE_FAN, 0, 4);
     }
 
