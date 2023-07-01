@@ -59,11 +59,12 @@
                <li><a href="#contact">Contact</a></li>
                <div class="xmark-container">
                   <!-- Also I've solved this centering problem using in-line css again. -->
-                  <i class="fa-solid fa-xmark" style="padding-left: 40px; padding-right: 40px;"
+                  <i class="fa-solid fa-xmark"
+                     style="padding-left: 40px; padding-right: 40px; padding-bottom: 10px; color: #fff;"
                      onclick="closemenu()"></i>
                </div>
             </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <i class="fa-solid fa-bars" style="color: #fff;" onclick="openmenu()"></i>
          </nav>
       </div>
    </div>
@@ -90,22 +91,22 @@
       <div class="container">
          <div class="row">
             <div class="about-col-1">
-               <!-- <img src="images/my_image.png"
-                  style="max-width: 100%; object-fit: contain; height: auto; border-radius: 15px; margin-top: -100px;"> -->
-               <img src="images/my_image.png"
-                  style="scale: 0.5; max-width: 100%; height: fit-content; width: auto; border-radius: 15px; margin-top: -170px;">
+               <img src="images/ProfilePicture.png" style="scale: 0.8;">
             </div>
-            <div class="about-col-2">
+            <div class=" about-col-2">
                <h1 class="sub-title">About Me</h1>
-               <p>Umut Kaan Özdemir, a committed Computer Scientist and Game Developer from Türkiye, began his passion
+               <p>Umut Kaan Özdemir, a committed Computer Scientist and Game Developer from Türkiye, began his
+                  passion
                   for
                   gaming as a child, leading him to a computer science degree and a career in game development.
                   Embarking
-                  on his programming journey in 2019, he faced challenges but persevered to master his skills. In 2021,
+                  on his programming journey in 2019, he faced challenges but persevered to master his skills. In
+                  2021,
                   he
                   transitioned into game development with Unity, marking a pivotal turning point in his career.
                   Currently,
-                  he is expanding his knowledge into 3D modeling, animation, and computer graphics to create even more
+                  he is expanding his knowledge into 3D modeling, animation, and computer graphics to create even
+                  more
                   compelling gaming experiences.
                   <br>
                   <br>
@@ -113,7 +114,8 @@
                   but is
                   also deeply driven by a desire to provide thought-provoking, enriching experiences that promote
                   personal
-                  growth among players. His games aim to impart wisdom and highlight truths, proving that gaming is more
+                  growth among players. His games aim to impart wisdom and highlight truths, proving that gaming is
+                  more
                   than just amusement; it's an interactive medium for meaningful growth.
                </p>
                <br>
@@ -157,7 +159,8 @@
                <h2>Game Development</h2>
                <p>
                   As I strive to enhance both my software development and game
-                  development skills, I am captivated by the creative and technical challenges that this field offers.
+                  development skills, I am captivated by the creative and technical challenges that this field
+                  offers.
                </p>
                <!-- My journey into programming began in late 2019, initiated through my university. Since late 2021, my
                   explorations in this domain have intensified, and I have dedicated myself to gaining a thorough
@@ -167,7 +170,8 @@
             <div>
                <i class="fa-solid fa-cube"></i>
                <h2>3D Modeling & Animation</h2>
-               <p>Recently, I embarked on a new journey into the world of 3D modeling, employing the powerful tool,
+               <p>Recently, I embarked on a new journey into the world of 3D modeling, employing the powerful
+                  tool,
                   Blender.</p>
                <!-- As I am in the early stages of mastering this software, I am fascinated by the possibilities
                   it provides. I am eager to leverage Blender's potential and integrate it into my game development
@@ -200,7 +204,8 @@
                <img src="images/DalgaKıran_fixed.png">
                <div class="layer">
                   <h3>DalgaKıran</h3>
-                  <p>DalgaKıran is a game is game for increasing human resistance against information disorder.</p>
+                  <p>DalgaKıran is a game is game for increasing human resistance against information disorder.
+                  </p>
                   <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                </div>
             </div>
@@ -224,12 +229,14 @@
                <img src="images/Other_Projects_fixed.png">
                <div class="layer">
                   <h3>Other projects/apps from university</h3>
-                  <p>Of courese I have developed some other projects/apps in the university. Here you can find them.</p>
+                  <p>Of courese I have developed some other projects/apps in the university. Here you can find
+                     them.
+                  </p>
                   <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                </div>
             </div>
          </div>
-         <a href="#" class="btn">See more</a>
+         <!-- <a href="#" class="btn">See more</a> -->
       </div>
       <br>
       <br>
@@ -256,7 +263,6 @@
                   </a>
                   <a href="https://medium.com/@y01cu" target="_blank"><i class="fa-brands fa-medium"></i>
                   </a>
-
                </div>
                <a href="images/my-cv.pdf" target="_blank" download class="btn btn2">Download CV</a>
             </div>
@@ -267,10 +273,11 @@
                   <textarea name="message" placeholder="Your Message" rows="6"></textarea>
                   <button type="submit" class="btn btn2">Submit</button>
                </form> -->
-               <form action="https://formsubmit.co/umutaan50@gmail.com" method="POST" style="margin-top: 50px;">
+               <form action="https://formsubmit.co/umutaan50@gmail.com" method="POST">
                   <input type="text" name="name" placeholder="Full name" required>
                   <input type="email" name="email" placeholder="Email adress" required>
-                  <textarea type="message" name="message" placeholder="Message" rows="8"></textarea>
+                  <textarea type="message" name="message" placeholder="Message (sending message requires reCAPTCHA)"
+                     rows="8"></textarea>
                   <button type="submit" class="btn btn2" style="margin: 10px auto;">Send</button>
                </form>
             </div>
@@ -280,7 +287,6 @@
          <p>Umut Kaan Özdemir © 2023</p>
       </div>
    </div>
-
    <script>
       var tablinks = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tab-contents");
@@ -295,7 +301,6 @@
          event.currentTarget.classList.add("active-link");
          document.getElementById(tabname).classList.add("active-tab");
       }
-
    </script>
 
    <script>

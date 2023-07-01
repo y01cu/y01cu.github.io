@@ -1,3 +1,5 @@
+/* --------BASE-------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +8,9 @@
 }
 html {
   scroll-behavior: smooth;
+}
+body {
+  font-family: var(--body--);
 }
 #header {
 }
@@ -66,11 +71,14 @@ nav ul li a:hover::after {
 }
 /* ----------about----------- */
 #about {
+  padding: 80px 0;
   color: #000000;
 }
 .row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  /* justify-content: center; */
   flex-wrap: wrap;
 }
 .about-col-1 {
@@ -78,7 +86,9 @@ nav ul li a:hover::after {
 }
 .about-col-1 img {
   width: 100%;
-  border-radius: 15px;
+
+  /* border-radius: 15px;
+  justify-self: center; */
 }
 .about-col-2 {
   flex-basis: 60%;
@@ -86,7 +96,7 @@ nav ul li a:hover::after {
 .sub-title {
   font-size: 60px;
   font-weight: 600;
-  color: #1e90ff;
+  color: #fff;
 }
 .tab-titles {
   display: flex;
@@ -242,13 +252,11 @@ nav ul li a:hover::after {
 /* ----------contact----------- */
 .contact-left {
   flex-basis: 35%;
+  margin-top: -195px;
 }
 .contact-right {
   flex-basis: 60%;
-  margin-bottom: 100px;
-}
-.contact-left p {
-  margin-top: 10px;
+  /* margin-bottom: 100px; */
 }
 .contact-left p i {
   color: #1e90ff;
@@ -313,12 +321,12 @@ form .btn2 {
 nav .fa-solid {
   display: none;
 }
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 900px) {
   /* I've changed max width from 600px to 770px since it's more suitable for mobile devices. */
   /*Background image part will be skipped since it's not necessary. */
 
   .header-text {
-    margin-top: 100%;
+    /* margin-top: 10%; */
     font-size: 16px;
   }
   .header-text h1 {
@@ -339,7 +347,6 @@ nav .fa-solid {
     z-index: 2;
     transition: right 0.3s;
     text-align: center;
-
     align-items: center;
     justify-content: center;
   }
@@ -366,8 +373,14 @@ nav .fa-solid {
   .about-col-2 {
     flex-basis: 100%;
   }
+  .about-col-1 {
+    padding-top: 100px;
+    /* margin-bottom: 30px;
+    padding-right: 10px; */
+  }
   .about-col-2 {
     font-size: 14px;
+    /* margin-right: 50px; */
   }
   .about-col-2 p {
     color: #000000;

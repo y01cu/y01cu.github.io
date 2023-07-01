@@ -221,6 +221,5 @@ var programBackground;
         gl.uniform4fv(backgroundColor, [0.98, 0.98, 0.98, 0.85]);
         gl.drawArrays(gl.TRIANGLE_FAN, 0, 4);
     }
-
     requestAnimation(render);
 }());
