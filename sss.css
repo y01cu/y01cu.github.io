@@ -184,6 +184,8 @@ nav ul li a:hover::after {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  transition: transform 1500ms;
+  /* transition: transform 0.5s; */
 }
 .work img {
   width: 100%;
@@ -350,6 +352,13 @@ nav .fa-solid {
     align-items: center;
     justify-content: center;
   }
+  .contact-left .sub-title {
+    margin-bottom: 20px;
+  }
+  #portfolio .container {
+    scale: 0.9;
+    margin-bottom: 20%;
+  }
   nav ul li {
     display: block;
     padding: 20px;
@@ -365,16 +374,20 @@ nav .fa-solid {
     left: 25px;
     cursor: pointer;
   }
+  #interests {
+    padding-top: 10%;
+  }
   .sub-title {
-    margin-top: 15%;
+    /* margin-top: 15%; */
     font-size: 40px;
+    text-align: center;
   }
   .about-col-1,
   .about-col-2 {
     flex-basis: 100%;
   }
   .about-col-1 {
-    padding-top: 100px;
+    /* padding-top: 100px; */
     /* margin-bottom: 30px;
     padding-right: 10px; */
   }
@@ -388,6 +401,9 @@ nav .fa-solid {
   .tab-links {
     font-size: 16px;
     margin-right: 20px;
+  }
+  .contact {
+    padding-top: 200px;
   }
   .contact-left,
   .contact-right {
