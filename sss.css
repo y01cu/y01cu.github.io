@@ -254,11 +254,9 @@ nav ul li a:hover::after {
 /* ----------contact----------- */
 .contact-left {
   flex-basis: 35%;
-  margin-top: -195px;
 }
 .contact-right {
   flex-basis: 60%;
-  /* margin-bottom: 100px; */
 }
 .contact-left p i {
   color: #1e90ff;
@@ -329,7 +327,7 @@ nav .fa-solid {
 
   .header-text {
     /* margin-top: 10%; */
-    font-size: 16px;
+    font-size: 12px;
   }
   .header-text h1 {
     font-size: 30px;
@@ -354,6 +352,7 @@ nav .fa-solid {
   }
   .contact-left .sub-title {
     margin-bottom: 20px;
+    margin-top: 100px;
   }
   #portfolio .container {
     scale: 0.9;
@@ -395,6 +394,9 @@ nav .fa-solid {
     font-size: 14px;
     /* margin-right: 50px; */
   }
+  .about-col-2 .sub-title {
+    margin-bottom: 20px;
+  }
   .about-col-2 p {
     color: #000000;
   }
@@ -403,7 +405,7 @@ nav .fa-solid {
     margin-right: 20px;
   }
   .contact {
-    padding-top: 200px;
+    /* padding-top: 200px; */
   }
   .contact-left,
   .contact-right {
