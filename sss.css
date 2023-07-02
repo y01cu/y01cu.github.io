@@ -71,7 +71,7 @@ nav ul li a:hover::after {
 }
 /* ----------about----------- */
 #about {
-  padding: 80px 0;
+  /* padding: 20px 0; */
   color: #000000;
 }
 .row {
@@ -91,7 +91,8 @@ nav ul li a:hover::after {
   justify-self: center; */
 }
 .about-col-2 {
-  flex-basis: 60%;
+  /* flex-basis: 60%; */
+  flex-basis: 100%;
 }
 .sub-title {
   font-size: 60px;
@@ -386,11 +387,6 @@ nav .fa-solid {
   .about-col-1,
   .about-col-2 {
     flex-basis: 100%;
-  }
-  .about-col-1 {
-    /* padding-top: 100px; */
-    /* margin-bottom: 30px;
-    padding-right: 10px; */
   }
   .about-col-2 {
     font-size: 14px;

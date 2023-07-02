@@ -134,7 +134,7 @@ var programBackground;
         // gl.enable(gl.DEPTH_TEST);
         // gl.depthFunc(gl.LESS);
         requestId = undefined;
-
+        
         const elapsed = Math.min(now - then, 1000 / 10);
         then = now;
         if (running) {
@@ -152,6 +152,7 @@ var programBackground;
         gl.blendFunc(gl.SRC_ALPHA, gl.ONE);
         gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
         
+        DrawBackground();
 
         const aspect = gl.canvas.clientWidth / gl.canvas.clientHeight;
         const maxFieldOfViewX = 50 * Math.PI / 180;
@@ -172,7 +173,6 @@ var programBackground;
 
         // Used background program at the beginning 
         
-        DrawBackground();
         
         // And then cube program later on.
         
@@ -206,6 +206,7 @@ var programBackground;
             twgl.drawBufferInfo(gl, bufferInfo, gl.LINES);
         }
 
+
         if (running) {
             requestAnimation(render);
         }
@@ -218,7 +219,7 @@ var programBackground;
         gl.bindBuffer(gl.ARRAY_BUFFER, backgroundBuffer);
         gl.vertexAttribPointer(vertexPosition, 2, gl.FLOAT, false, 0, 0);
         var backgroundColor = gl.getUniformLocation(programBackground, "u_color");
-        gl.uniform4fv(backgroundColor, [0.98, 0.98, 0.98, 0.85]);
+        gl.uniform4fv(backgroundColor, [0.98, 0.98, 0.98, 0.7]);
         gl.drawArrays(gl.TRIANGLE_FAN, 0, 4);
     }
     requestAnimation(render);
