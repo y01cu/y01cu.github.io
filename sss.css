@@ -12,8 +12,6 @@ html {
 body {
   font-family: var(--body--);
 }
-#header {
-}
 .sidemenu {
   position: fixed;
 }
@@ -60,11 +58,8 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
-.header-text {
-  font-size: 30px;
-}
 .header-text h1 {
-  font-size: 60px;
+  font-size: 50px;
 }
 .header-text p span {
   color: #1e90ff;
@@ -106,6 +101,7 @@ nav ul li a:hover::after {
 .tab-links {
   margin-right: 50px;
   font-size: 18px;
+  color: #fff;
   font-weight: 500;
   cursor: pointer;
   position: relative;
@@ -114,7 +110,7 @@ nav ul li a:hover::after {
   content: "";
   width: 0;
   height: 3px;
-  background: #1e90ff;
+  background: #fff;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -128,7 +124,8 @@ nav ul li a:hover::after {
   margin: 10px 0;
 }
 .tab-contents ul li span {
-  color: #1e90ff;
+  color: #fff;
+  /* color: #1e90ff; */
   /* color: hsl(16, 100%, 50%); */
   font-size: 14px;
 }
@@ -165,7 +162,7 @@ nav ul li a:hover::after {
 .interests-list div h2 {
   font-size: 30px;
   font-weight: 500;
-  color: #000000;
+  color: #1e90ff;
   margin-bottom: 15px;
 }
 
@@ -263,7 +260,6 @@ nav ul li a:hover::after {
 }
 .contact-left p i {
   color: #1e90ff;
-
   margin-right: 15px;
   font-size: 25px;
 }

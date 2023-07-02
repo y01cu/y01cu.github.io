@@ -69,14 +69,14 @@
       </div>
    </div>
    <div id="header">
-      <div class="container">
+      <div class="container" style="padding-top: 13%; margin-bottom: 20%;">
          <div class="header-text">
 
             <img src="images/blue-arrow-up.png" style="float: right;">
             <br>
             <br>
             <h1 style="display: inline-block; margin-left: 60px;
-            margin-right: 10px;">Welcome to portfolio site I've been developing! Explore the
+            margin-right: 10px; color: #fff;">Welcome to portfolio site I've been developing! Explore the
                intersection of <span style="color: #1e90ff;">gaming and personal
                   growth</span> with Umut Kaan
                Özdemir. Here, games go beyond entertainment. Enjoy your stay.
@@ -95,7 +95,8 @@
             </div> -->
             <div class="about-col-2">
                <h1 class="sub-title">About Me</h1>
-               <p>Umut Kaan Özdemir, a committed Computer Scientist and Game Developer from Türkiye, began his
+               <p style="font-size: 20px;">Umut Kaan Özdemir, a committed Computer Scientist and Game Developer from
+                  Türkiye, began his
                   passion
                   for
                   gaming as a child, leading him to a computer science degree and a career in game development.
@@ -120,28 +121,31 @@
                </p>
                <br>
                <br>
-               <hr style="background-color: #1e90ff; height: 3px;">
+               <hr style="background-color: #1e90ff; height: 4px;">
                <br>
                </p>
 
                <div class="tab-titles">
-                  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                  <p class="tab-links" onclick="opentab('education')">Education</p>
+                  <p class="tab-links active-link" onclick="opentab('skills')" style="font-size: 22px;">Skills</p>
+                  <p class="tab-links" onclick="opentab('education')" style="font-size: 22px;">Education</p>
                </div>
                <div class="tab-contents active-tab" id="skills">
-                  <ul>
-                     <li><span>Programming languages experience from the highest to the lowest</span><br>C#, Java, C,
+                  <ul style="font-size: 20px;">
+                     <li><span style="font-size: 20px;">Programming languages experience from the highest to the
+                           lowest</span><br>C#, Java, C,
                         JavaScript, Python, GLSL, Haskell, Verilog</li>
-                     <li><span>Main tools and techologies</span><br>Unity, WebGL, Blender, Three.js
+                     <li><span style="font-size: 20px;">Main tools and techologies</span><br>Unity, WebGL, Blender,
+                        Three.js
                      </li>
                   </ul>
                </div>
                <div class="tab-contents" id="education">
-                  <ul>
-                     <li><span>University</span><br>Gazi University Engineering Faculty Computer Engineering
+                  <ul style="font-size: 20px;">
+                     <li><span style="font-size: 20px;">University</span><br>Gazi University Engineering Faculty
+                        Computer Engineering
                         Department
                         (2019-2023)</li>
-                     <li><span>High school</span><br>Adana Anadolu High School (2015-2019)</li>
+                     <li><span style="font-size: 20px;">High school</span><br>Adana Anadolu High School (2015-2019)</li>
                   </ul>
                </div>
             </div>
@@ -312,6 +316,35 @@
       function closemenu() {
          sidemenu.style.right = "-200px";
       }
+
+   </script>
+
+   <script src="scrollreveal.min.js"></script>
+
+   <script>
+
+      const sr = ScrollReveal({
+         origin: 'top',
+         distance: '80px',
+         duration: 2000,
+         reset: true
+      });
+
+      sr.reveal('#header .container', { delay: 600, origin: 'left', interval: 150 });
+      sr.reveal('#about .container', { delay: 600, origin: 'right', interval: 150 });
+      sr.reveal('#interests .container', { delay: 600, origin: 'left', interval: 150 });
+      sr.reveal('#portfolio .container', { delay: 600, origin: 'right', interval: 150 });
+      sr.reveal('#contact .container', { delay: 600, origin: 'left', interval: 150 });
+
+      // sr.reveal('.home-right', {
+      //    delay: 200
+      // });
+      // sr.reveal('.home-btn', {
+      //    delay: 400
+      // });
+      // sr.reveal('.about-left', {});
+
+
 
    </script>
 
