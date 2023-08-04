@@ -326,6 +326,10 @@ nav .fa-solid {
   /* I've changed max width from 600px to 770px since it's more suitable for mobile devices. */
   /*Background image part will be skipped since it's not necessary. */
 
+  body {
+    font-family: var(--body--);
+    overflow-x: hidden;
+  }
   .header-text {
     /* margin-top: 10%; */
     font-size: 12px;
