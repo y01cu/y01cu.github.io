@@ -23,13 +23,11 @@ body {
 }
 .hidden {
   opacity: 0;
-  filter: blur(5px);
   transform: translate(-100%);
   transition: all 1.2s;
 }
 .show {
   opacity: 1;
-  filter: blur(0);
   transform: translate(0);
 }
 .sticky-nav {
