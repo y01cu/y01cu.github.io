@@ -226,6 +226,30 @@ nav ul li a:hover::after {
   font-weight: 600;
   margin-bottom: 20px;
 }
+
+.hourglass-container {
+  position: absolute; /* this will overlay the icons on your card */
+  top: 15px;
+  right: 5px; /* adjust this as per your design */
+  height: 5px; /* adjust height to fit your design */
+  width: auto;
+  /* background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  );  */
+  /* semi-transparent white background */
+  display: flex;
+  flex-direction: row; /* this makes it horizontal */
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-solid.fa-hourglass-half {
+  margin: 0 5px; /* adjust spacing between icons */
+}
+
 .layer a {
   margin-top: 20px;
   color: #1e90ff;
