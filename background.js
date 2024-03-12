@@ -219,7 +219,8 @@ var programBackground;
         gl.bindBuffer(gl.ARRAY_BUFFER, backgroundBuffer);
         gl.vertexAttribPointer(vertexPosition, 2, gl.FLOAT, false, 0, 0);
         var backgroundColor = gl.getUniformLocation(programBackground, "u_color");
-        gl.uniform4fv(backgroundColor, [0.98, 0.98, 0.98, 0.7]);
+        gl.uniform4fv(backgroundColor, [0, 0, 0, 0.7]);
+        // gl.uniform4fv(backgroundColor, [0.98, 0.98, 0.98, 0.7]);
         gl.drawArrays(gl.TRIANGLE_FAN, 0, 4);
     }
     requestAnimation(render);
