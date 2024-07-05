@@ -1,1 +1,4 @@
-Portfolio website that showcases projects, education, about, contact sections.
+**Portfolio**
+---
+- My portfolio website, contains my projects, education, info about me and contact section.
+
